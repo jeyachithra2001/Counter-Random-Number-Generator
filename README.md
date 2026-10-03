@@ -95,16 +95,28 @@ Conditional rendering is used to display messages based on the current state.
 
 📂 Project Structure
 
-📁 src
- ┣ 📁 components
- ┃ ┗ 📄 nav.jsx
- ┃ ┗ 📄 counterBtn.jsx
- ┣ 📁 pages
- ┃ ┣ 📄 counter.jsx
- ┃ ┗ 📄 randomNum.jsx
- ┣ 📄 App.jsx
- ┣ 📄 main.jsx
- ┗ 🎨 index.css
+counter-app/
+│
+├── node_modules/
+│
+├── src/
+│   ├── components/
+│   │   └── Reusable React components
+│   │
+│   ├── pages/
+│   │   └── counter.jsx
+│   │   └── randomNum.jsx
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+│
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package-lock.json
+├── package.json
+├── README.md
+└── vite.config.js
 
 
 ---
