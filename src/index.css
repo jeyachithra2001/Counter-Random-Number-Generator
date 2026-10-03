@@ -1,0 +1,258 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background: radial-gradient(circle at bottom left, rgb(215, 2, 215), rgb(41, 2, 215), rgb(181, 6, 181));
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: white;
+  padding: 10px;
+  position: sticky;
+  top: 0%;
+}
+
+.nav__item {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav__item button {
+  background: radial-gradient(circle at bottom left, rgb(215, 2, 215), rgb(41, 2, 215), rgb(181, 6, 181));
+  border: 2px solid rgb(184, 15, 184);
+  transition: all 1s ease-in-out;
+}
+
+.nav__item button:hover {
+  background: white;
+  color: black;
+}
+
+.nav span {
+  text-align: right;
+}
+
+/* MENU ICON */
+.menu-btn{
+  border: none;
+  background: transparent;
+  color: black;
+  font-size: 25px;
+  display: none;
+}
+
+/* SIDEBAR */
+.sidebar{
+  position: fixed;
+  left: -300px;
+  top: 0;
+  height: 100vh;
+  width: 300px;
+  background-color: white;
+  z-index: 20;
+  transition: all 1s ease;
+  display: none;
+}
+.sidebar.open{
+  left: 0;
+}
+.sidebar__links button:hover{
+  background: radial-gradient(circle at bottom left, rgba(215, 2, 215, 0.447), rgba(41, 2, 215, 0.557), rgba(181, 6, 181,0.447));
+}
+.sidebar__links{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: absolute;
+  top: 70px;
+}
+.sidebar__links button{
+  width: 280px;
+  padding: 14px;
+  margin:0px 10px;
+  border: none;
+  border-radius: 8px;
+  text-align: left;
+  color: black;
+  background-color: white;
+}
+.overlay{
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 10;
+}
+.close-btn {
+  background-color: white;
+  font-size: 20px;
+  position: absolute;
+  left: 220px;
+  top: 5px;
+}
+.close-btn:hover,
+.menu-btn:hover{
+  background-color: white;
+}
+
+/* TASK TITLE */
+.title {
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* TASK CONTAINER */
+.container {
+  width: 60%;
+  min-height: 300px;
+  margin: 20px auto;
+  margin-bottom: 40px;
+  padding: 30px;
+  border-radius: 20px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  background-color: rgb(249, 249, 249);
+  text-align: center;
+  box-shadow: rgba(71, 76, 79, 0.461) 0px 1px 2px 0px, rgba(22, 22, 23, 0.402) 0px 2px 6px 2px;
+}
+
+/* NUMBER BOX */
+.number__title {
+  font-weight: bold;
+}
+
+.number {
+  background: linear-gradient(135deg, rgb(215, 2, 215), rgb(41, 2, 215));
+  color: white;
+  height: 80px;
+  display: inline-block;
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 0px;
+}
+
+.number span {
+  margin: 0px 20px;
+  font-size: 50px;
+}
+
+/* BUTTON SECTION */
+.incdecFlex {
+  display: flex;
+  justify-content: space-between;
+  gap: 200px;
+}
+
+button {
+  background-color: blue;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:active {
+  opacity: 0.6;
+  color: black;
+}
+
+button:hover {
+  background-color: rgb(105, 105, 248);
+  color: black;
+}
+
+.warn {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 20px;
+  color: red;
+}
+
+/* FEATURE BOX */
+.feature {
+  border-radius: 20px;
+  background-color: rgb(201, 221, 247);
+  padding: 10px;
+  margin-top: 10px;
+  display: flex;
+  text-align: left;
+}
+
+.fast__icon {
+  border: 2px solid black;
+  border-radius: 50%;
+  padding: 2px 5px;
+}
+
+.feature h5 {
+  margin-left: 10px;
+  margin-bottom: -10px;
+}
+
+.feature small {
+  display: block;
+  font-size: 13px;
+  color: rgb(83, 82, 82);
+  margin-left: 10px;
+}
+
+
+/* RANDOM NUMBER PAGE */
+.task__explain {
+  font-size: 14px;
+  color: rgb(83, 82, 82);
+  margin-bottom: 20px;
+}
+
+.container small {
+  font-size: 12px;
+  color: rgb(83, 82, 82);
+  margin-top: 20px;
+}
+
+.btn-span {
+  margin: 0px 5px;
+}
+
+.luck__msg {
+  text-align: center;
+  font-size: 16px;
+  margin: 30px;
+  color: white;
+}
+
+
+/* RESPONSIVENESS */
+@media screen and (min-width:576px) {
+  .overlay{
+    display: none;
+  }
+} 
+@media screen and (max-width:576px) {
+  .menu-btn{
+    display: block;
+  }
+  .nav__item{
+    display: none;
+  }
+  .sidebar{
+    display: block;
+  }
+}
+@media screen and (max-width:480px) {
+  body{
+    font-size: 14px;
+  }
+  .container{
+    width: 80%;
+  }
+}
