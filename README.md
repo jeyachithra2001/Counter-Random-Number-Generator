@@ -7,6 +7,12 @@ This project was created to practice fundamental React concepts such as Componen
 
 ---
 
+🔴 Live Demo
+
+View Live Website: (https://counter-random-number-generator-theta.vercel.app/)
+
+---
+
 ✨ Features
 
 🔢 Counter Application
